@@ -7,6 +7,12 @@ public class Account {
     public Account() {
     }
 
+    public Account(String name, String level, boolean vipFlag) {
+        this.name = name;
+        this.level = level;
+        this.vipFlag = vipFlag;
+    }
+
     public boolean isVipFlag() {
         return vipFlag;
     }
@@ -31,5 +37,14 @@ public class Account {
 
     public void setLevel(String level) {
         this.level = level;
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "name='" + name + '\'' +
+                ", level='" + level + '\'' +
+                ", vipFlag=" + vipFlag +
+                '}';
     }
 }
